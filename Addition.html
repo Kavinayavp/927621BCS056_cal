@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Addition.css">
+</head>
+<body>
+    <div  class="calb">
+        <input id="ib1" >
+        <input id="ib2" >
+    </div>
+<button onclick="add()">ADD</button>
+<button onclick="sub()">SUB</button>
+<button onclick="mul()">MUL</button>
+<button onclick="div()">DIV</button>
+<p id="result">Result</p>
+<script>
+    var ib1=document.getElementById("ib1")
+    var ib2=document.getElementById("ib2")
+    var result=document.getElementById("result")    
+   
+    function add(){
+        var a=Number(ib1.value)
+        var b=Number(ib2.value)
+        var total= a+b
+        result.textContent=total
+    }
+    function sub(){
+        var a=Number(ib1.value)
+        var b=Number(ib2.value)
+        var total= a-b
+        result.textContent=total
+    }
+   
+    function mul(){
+        var a=Number(ib1.value)
+        var b=Number(ib2.value)
+        var total= a*b
+        result.textContent=total
+    }
+   
+    function div(){
+        var a=Number(ib1.value)
+        var b=Number(ib2.value)
+        var total= a/b
+        result.textContent=total
+    }
+</script>
+</body>
+</html>
